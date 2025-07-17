@@ -1,0 +1,74 @@
+
+/* Fonts */
+:root {
+  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Barlow Condensed",  sans-serif;
+  --nav-font: "Open Sans",  sans-serif;
+  
+}
+
+/* Tipografías generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Títulos con Barlow Condensed */
+h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; /* o 800 si querés más peso */
+    font-size: 41px;
+}
+
+h2, h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Estilo general para botones */
+.btn {
+    border-radius: 4px !important; /* más cuadrado */
+    padding: 12px 24px;
+    font-size: 16px;
+    
+    font-weight: bold;
+}
+
+/* Botón amarillo */
+.btn-primary {
+    background-color: #fdd835;
+    border-color: #fbc02d;
+    color: #000;
+    font-weight: 557;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #fbc02d;
+    border-color: #f9a825;
+    color: #000;
+    
+    box-shadow: 0 0 12px rgba(253, 216, 53, 0.6); /* brillo dorado */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-default {
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 557;
+}
+
+.fullscreen-bg {
+  background-image: url('assets/img/prototipo-06.png'); /* Cambiá esta ruta por la tuya */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.contenido-superpuesto {
+  position: relative;
+  z-index: 2;
+  color: white; /* Podés cambiarlo según el contraste */
+  padding-top: 100px;
+}
